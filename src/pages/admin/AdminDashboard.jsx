@@ -19,6 +19,7 @@ import {
 import StatCard from "../../components/Statcard";
 
 import "./AdminDashboard.css";
+import API_URL from "../../config/api";
 
 // ======================================================
 // API CONFIGURATION

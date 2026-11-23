@@ -1,0 +1,480 @@
+/* =========================================
+   STUDENT NAVBAR
+========================================= */
+
+.student-navbar {
+    width: 100%;
+    min-height: 82px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 15px 28px;
+
+    background: #ffffff;
+    border-bottom: 1px solid #edf0f5;
+
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+
+/* =========================================
+   LEFT SECTION
+========================================= */
+
+.student-navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.student-navbar-heading h2 {
+    margin: 0;
+
+    color: #17243b;
+
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.student-navbar-heading p {
+    margin: 5px 0 0;
+
+    color: #8993a5;
+
+    font-size: 12px;
+}
+
+
+/* Mobile Menu Button */
+
+.student-menu-toggle {
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+
+    border: none;
+    border-radius: 9px;
+
+    background: #f1f5f9;
+    color: #17243b;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   RIGHT SECTION
+========================================= */
+
+.student-navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+/* =========================================
+   SEARCH BUTTON
+========================================= */
+
+.student-search-button {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    padding: 10px 15px;
+
+    background: #f5f7fb;
+
+    border: 1px solid #e9edf4;
+    border-radius: 9px;
+
+    color: #64748b;
+
+    font-size: 12px;
+    font-weight: 500;
+
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.student-search-button:hover {
+    background: #eff6ff;
+    border-color: #bfdbfe;
+    color: #2563eb;
+}
+
+
+/* =========================================
+   NOTIFICATION BUTTON
+========================================= */
+
+.student-notification-button {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    border: none;
+    border-radius: 9px;
+
+    background: #f5f7fb;
+    color: #64748b;
+
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.student-notification-button:hover {
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+.student-notification-dot {
+    position: absolute;
+
+    top: 9px;
+    right: 9px;
+
+    width: 8px;
+    height: 8px;
+
+    background: #ef4444;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+}
+
+
+/* =========================================
+   PROFILE SECTION
+========================================= */
+
+.student-navbar-profile {
+    position: relative;
+}
+
+.student-profile-trigger {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 5px;
+
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+    color: #64748b;
+}
+
+
+/* Avatar */
+
+.student-navbar-avatar {
+    width: 39px;
+    height: 39px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #dbeafe;
+    color: #2563eb;
+
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+/* User Information */
+
+.student-navbar-user {
+    text-align: left;
+}
+
+.student-navbar-user h4 {
+    margin: 0;
+
+    color: #17243b;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.student-navbar-user span {
+    display: block;
+
+    margin-top: 4px;
+
+    color: #8993a5;
+    font-size: 10px;
+}
+
+
+/* Dropdown Arrow */
+
+.student-profile-trigger svg {
+    transition: transform 0.25s ease;
+}
+
+.student-profile-trigger svg.rotate {
+    transform: rotate(180deg);
+}
+
+
+/* =========================================
+   PROFILE DROPDOWN
+========================================= */
+
+.student-profile-dropdown {
+    position: absolute;
+
+    top: calc(100% + 13px);
+    right: 0;
+
+    width: 190px;
+
+    padding: 8px;
+
+    background: #ffffff;
+
+    border: 1px solid #edf0f5;
+    border-radius: 12px;
+
+    box-shadow: 0 10px 35px rgba(15, 23, 42, 0.12);
+
+    z-index: 110;
+    animation: studentDropdown 0.2s ease;
+}
+
+@keyframes studentDropdown {
+    from {
+        opacity: 0;
+        transform: translateY(-7px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.student-profile-dropdown button {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    gap: 11px;
+
+    padding: 11px;
+
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+
+    color: #475569;
+
+    font-size: 12px;
+    text-align: left;
+
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.student-profile-dropdown button:hover {
+    background: #f1f5f9;
+    color: #2563eb;
+}
+
+.student-dropdown-divider {
+    height: 1px;
+    background: #edf0f5;
+    margin: 5px 0;
+}
+
+.student-profile-dropdown button.student-dropdown-logout {
+    color: #dc2626;
+}
+
+.student-profile-dropdown button.student-dropdown-logout:hover {
+    background: #fef2f2;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 768px) {
+
+    .student-navbar {
+        min-height: 70px;
+        padding: 12px 16px;
+    }
+
+    .student-menu-toggle {
+        display: flex;
+    }
+
+    .student-navbar-heading h2 {
+        font-size: 15px;
+    }
+
+    .student-navbar-heading p {
+        font-size: 10px;
+    }
+
+    .student-navbar-right {
+        gap: 10px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .student-navbar {
+        padding: 12px;
+    }
+
+    .student-navbar-heading p {
+        display: none;
+    }
+
+    .student-search-button {
+        width: 37px;
+        height: 37px;
+
+        justify-content: center;
+        padding: 0;
+    }
+
+    .student-search-button span {
+        display: none;
+    }
+
+    .student-notification-button {
+        width: 37px;
+        height: 37px;
+    }
+
+    .student-navbar-user {
+        display: none;
+    }
+
+    .student-profile-trigger {
+        gap: 4px;
+    }
+
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 1024px) {
+
+    .student-navbar {
+        padding: 14px 20px;
+    }
+
+    .student-navbar-right {
+        gap: 12px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .student-navbar {
+        min-height: 70px;
+        padding: 12px 16px;
+    }
+
+    .student-menu-toggle {
+        display: flex;
+        flex-shrink: 0;
+    }
+
+    .student-navbar-left {
+        gap: 10px;
+        min-width: 0;
+    }
+
+    .student-navbar-heading h2 {
+        font-size: 15px;
+    }
+
+    .student-navbar-heading p {
+        font-size: 10px;
+    }
+
+    .student-navbar-right {
+        gap: 9px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .student-navbar {
+        padding: 11px 12px;
+    }
+
+    .student-navbar-heading h2 {
+        font-size: 14px;
+    }
+
+    .student-navbar-heading p {
+        display: none;
+    }
+
+    .student-search-button {
+        width: 36px;
+        height: 36px;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .student-search-button span {
+        display: none;
+    }
+
+    .student-notification-button {
+        width: 36px;
+        height: 36px;
+    }
+
+    .student-navbar-user {
+        display: none;
+    }
+
+    .student-profile-trigger {
+        gap: 4px;
+    }
+
+    .student-navbar-avatar {
+        width: 35px;
+        height: 35px;
+    }
+
+    .student-profile-dropdown {
+        right: 0;
+        width: 180px;
+    }
+
+}

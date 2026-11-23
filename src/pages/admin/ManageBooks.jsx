@@ -15,8 +15,9 @@ import {
 } from "lucide-react";
 
 import "./ManageBooks.css";
+import API_BASE_URL from "../../config/api";
 
-const API_URL = "http://localhost:5000/api/books";
+const API_URL = `${API_BASE_URL}/api/books`;
 
 const CATEGORIES = [
     "Programming",

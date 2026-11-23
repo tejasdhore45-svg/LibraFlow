@@ -10,10 +10,11 @@ import {
   Clock, AlertTriangle, BookMarked, Users, RefreshCw,
 } from "lucide-react";
 import "./IssueBook.css";
+import API_URL from "../../config/api";
 
-const BOOKS_API = "http://localhost:5000/api/books";
-const STUDENTS_API = "http://localhost:5000/api/students";
-const ISSUES_API = "http://localhost:5000/api/issues";
+const BOOKS_API = `${API_URL}/api/books`;
+const STUDENTS_API = `${API_URL}/api/students`;
+const ISSUES_API = `${API_URL}/api/issues`;
 
 function todayLocal() {
   const date = new Date();

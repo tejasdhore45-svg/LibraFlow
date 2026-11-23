@@ -17,8 +17,9 @@ import {
 } from "lucide-react";
 
 import "./MyProfile.css";
+import API_URL from "../../config/api";
 
-const PROFILE_API = "http://localhost:5000/api/students/me";
+const PROFILE_API = `${API_URL}/api/students/me`;
 
 function MyProfile() {
 

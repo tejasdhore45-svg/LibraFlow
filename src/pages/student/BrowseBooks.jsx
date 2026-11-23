@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 
 import "./BrowseBooks.css";
+import API_URL from "../../config/api";
 
 function BrowseBooks() {
 
@@ -66,7 +67,7 @@ function BrowseBooks() {
                 });
 
                 const response = await fetch(
-                    `http://localhost:5000/api/books/student?${params}`,
+                    `${API_URL}/api/books/student?${params}`,
                     {
                         headers: {
                             Authorization: `Bearer ${token}`
@@ -141,7 +142,7 @@ function BrowseBooks() {
             }
 
             const response = await fetch(
-                `http://localhost:5000/api/books/student/${bookId}`,
+                `${API_URL}/api/books/student/${bookId}`,
                 {
                     headers: {
                         Authorization: `Bearer ${token}`
@@ -186,7 +187,7 @@ function BrowseBooks() {
             }
 
             const response = await fetch(
-                "http://localhost:5000/api/book-requests",
+                `${API_URL}/api/book-requests`,
                 {
                     method: "POST",
 

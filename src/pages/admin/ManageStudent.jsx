@@ -5,8 +5,9 @@ import {
 } from "lucide-react";
 
 import "./ManageStudent.css";
+import API_BASE_URL from "../../config/api";
 
-const API_URL = "http://localhost:5000/api/students";
+const API_URL = `${API_BASE_URL}/api/students`;
 
 const emptyForm = {
   id: "",

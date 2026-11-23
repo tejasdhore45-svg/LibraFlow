@@ -4,6 +4,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import API_URL from "../config/api";
 
 import {
   Search,
@@ -22,7 +23,7 @@ import "./Navbar.css";
 // API CONFIGURATION
 // ======================================================
 
-const API_BASE = "http://localhost:5000/api";
+const API_BASE = `${API_URL}/api`;
 
 const text = (value) => String(value ?? "");
 

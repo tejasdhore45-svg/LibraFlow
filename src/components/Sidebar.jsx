@@ -4,7 +4,7 @@
 
 import { useEffect, useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-
+import API_URL from "../config/api";
 import {
   LayoutDashboard,
   BookOpen,
@@ -24,7 +24,7 @@ import "./Sidebar.css";
 // API CONFIGURATION
 // ======================================================
 
-const DASHBOARD_API = "http://localhost:5000/api/dashboard";
+const DASHBOARD_API = `${API_URL}/api/dashboard`;
 
 // ======================================================
 // SIDEBAR NAVIGATION ITEMS

@@ -16,6 +16,7 @@ import {
 
 import "./Login.css";
 import "./StudentSignup.css";
+import API_URL from "../../config/api";
 
 const StudentSignup = () => {
 
@@ -69,7 +70,7 @@ const StudentSignup = () => {
         try {
 
             const response = await fetch(
-                "http://localhost:5000/api/auth/register-student",
+                `${API_URL}/api/auth/register-student`,
                 {
                     method: "POST",
 

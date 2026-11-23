@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 
 import "./Signup.css";
+import API_URL from "../../config/api";
 
 const Signup = () => {
 
@@ -49,7 +50,7 @@ const Signup = () => {
 
         try {
             const response = await fetch(
-                "http://localhost:5000/api/auth/register-library",
+                `${API_URL}/api/auth/register-library`,
                 {
                     method: "POST",
                     headers: {

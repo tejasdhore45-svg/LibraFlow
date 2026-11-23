@@ -4,8 +4,9 @@ import {
   Download, Eye, X, CalendarDays, User, Hash, RotateCcw,
 } from "lucide-react";
 import "./Transaction.css";
+import API_URL from "../../config/api";
 
-const ISSUES_API = "http://localhost:5000/api/issues";
+const ISSUES_API = `${API_URL}/api/issues`;
 
 // ============================================
 // API REQUEST

@@ -16,9 +16,10 @@ import {
 } from "lucide-react";
 
 import "./Transaction.css";
+import API_URL from "../../config/api.js";
 
 // STUDENT TRANSACTION API
-const ISSUES_API = "http://localhost:5000/api/issues/student";
+const ISSUES_API = `${API_URL}/api/issues/student`;
 
 // ============================================
 // API REQUEST

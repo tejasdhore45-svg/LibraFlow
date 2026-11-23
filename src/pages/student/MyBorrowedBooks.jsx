@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 
 import "./MyBorrowedBooks.css";
+import API_URL from "../../config/api";
 
 function MyBorrowedBooks() {
 
@@ -39,7 +40,7 @@ function MyBorrowedBooks() {
                 }
 
                 const response = await fetch(
-                    "http://localhost:5000/api/issues/student",
+                    `${API_URL}/api/issues/student`,
                     {
                         headers: {
                             Authorization: `Bearer ${token}`

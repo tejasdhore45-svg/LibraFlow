@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./StudentDashboard.css";
+import API_URL from "../../config/api";
 
 import {
     BookOpen,
@@ -44,7 +45,7 @@ function StudentDashboard() {
                 }
 
                 const response = await fetch(
-                    "http://localhost:5000/api/dashboard/student",
+                    `${API_URL}/api/dashboard/student`,
                     {
                         headers: {
                             Authorization: `Bearer ${token}`

@@ -24,7 +24,7 @@ import "./AdminDashboard.css";
 // API CONFIGURATION
 // ======================================================
 
-const DASHBOARD_API = "http://localhost:5000/api/dashboard";
+const DASHBOARD_API = `${API_URL}/dashboard`;
 
 // ======================================================
 // DATE HELPER

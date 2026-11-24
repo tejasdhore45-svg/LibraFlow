@@ -25,7 +25,7 @@ import API_URL from "../../config/api";
 // API CONFIGURATION
 // ======================================================
 
-const DASHBOARD_API = `${API_URL}/dashboard`;
+const DASHBOARD_API = `${API_URL}/api/dashboard`;
 
 // ======================================================
 // DATE HELPER

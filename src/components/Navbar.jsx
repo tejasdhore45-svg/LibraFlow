@@ -98,7 +98,7 @@ function Navbar({ pageTitle = "Dashboard", toggleSidebar }) {
           fetch(`${API_BASE}/books`, { headers }),
           fetch(`${API_BASE}/students`, { headers }),
           fetch(`${API_BASE}/issues`, { headers }),
-          fetch(`${API_BASE}/dashboard`, { headers }),
+         fetch(`${API_BASE}/dashboard`, { headers }),
         ]);
 
       const [books, students, issues, dashboard] = await Promise.all([
